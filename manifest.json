@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+
+    "name": "LN Modal blocker",
+    "description": "This extension removes LN's login popup and lets you browse however you want without signing up",
+    "version": "0.0.1",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["http://*.lanacion.com.ar/*"],
+        "exclude_matches": ["http://www.lanacion.com.ar/"],
+        "js": ["/remove_popup.js"]
+    }],
+    "permissions": [
+        "activeTab",
+        "https://ajax.googleapis.com/"
+    ]
+}
