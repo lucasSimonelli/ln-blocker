@@ -6,4 +6,4 @@ To load
 * Make sure developer mode is enabled (top right)
 * Click load unpacked extension
 * Choose this repository's folder
-* Enjo!
+* Enjoy!
